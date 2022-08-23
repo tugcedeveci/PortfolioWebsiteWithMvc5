@@ -21,6 +21,8 @@ namespace MvcCv.Models.Entity
         public string Baslik { get; set; }
         public string AltBaslik1 { get; set; }
         public string AltBaslik2 { get; set; }
+
+        [StringLength(10,ErrorMessage ="Lütfen en fazla 10 karakterlik veri giriþi yapýn")]
         public string GNO { get; set; }
         public string Tarih { get; set; }
     }
